@@ -10,9 +10,10 @@
     <h2>Listagem</h2>
     <ul>
     {% for transacao in transacoes %}
-        <li>{{ transacao.descricao }} - {{ transacao.data}}
+        <li><a href="{% url 'url_update' transacao.id %}">update</a>{{ transacao.descricao }} - {{ transacao.data}}
          - {{transacao.valor}} - {{transacao.categoria}}</li>
     {% endfor %}
     </ul>
+    <a href="{% url 'url_nova'%}">novo</a>
 </body>
 </html>
