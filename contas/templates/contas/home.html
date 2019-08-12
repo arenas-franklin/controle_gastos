@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contas - Home</title>
-</head>
-<body>
+{% extends "shared/layout.html" %}
+{% block conteudo %}
     <h1>seja bem vindo</h1>
 
     <p>Agora são : {{now}}</p>
@@ -19,5 +12,5 @@
         {% endif %}
     {% endfor%}
     </ul>
-</body>
-</html>
+{% endblock conteudo %}
+    
